@@ -1,24 +1,17 @@
 # MemcachedCli
 
-TODO: Write a gem description
+Command line to access Memcached
+
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'memcached_cli'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install memcached_cli
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ memcached-cli add a_key a_value
+    $ memcached-cli get a_key
+    $ memcached-cli delete a_key
 
 ## Contributing
 
