@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["liuming@lmws.net"]
   spec.summary       = %q{Command line to access Memcached}
   spec.description   = spec.summary
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/liuming/memcached_cli"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
