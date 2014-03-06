@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/memcached_cli"
+
+MemcachedCli::Commands.start(ARGV)
