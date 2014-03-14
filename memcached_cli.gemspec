@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = MemcachedCli::VERSION
   spec.authors       = ["Ming Liu"]
   spec.email         = ["liuming@lmws.net"]
-  spec.summary       = %q{Command line to access Memcached}
+  spec.summary       = %q{Memcached command line tool}
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/liuming/memcached_cli"
   spec.license       = "MIT"
