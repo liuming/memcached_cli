@@ -1,5 +1,6 @@
-require "thor"
+require 'thor'
 require 'dalli'
+require 'json'
 require_relative "memcached_cli/version"
 
 module MemcachedCli
@@ -15,7 +16,7 @@ module MemcachedCli
       params = Dalli::Client.instance_method(command).parameters.reject{|(required,name)| name == :options}
       desc command.to_s, params.reduce([]){|s, (required,name)| s << (required == :req ? name : "[#{name.to_s}]").to_s}.join(' ')
       define_method command do |*params|
-        puts CLIENT.send(command, *params)
+        puts CLIENT.send(command, *params).to_json
       end
     end
   end
