@@ -1,0 +1,2 @@
+namespace :memcached do
+end
